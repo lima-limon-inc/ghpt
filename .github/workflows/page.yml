@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - site/**
+      - strawberry.txt
 
 jobs:
   happy-face:
@@ -19,7 +19,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: site/
+          path: strawberry.txt
 
   deploy:
     needs: happy-face
