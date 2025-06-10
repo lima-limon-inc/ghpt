@@ -2,7 +2,9 @@ name: Publish happy face to Github Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
 jobs:
   happy-face:
     name: Publish the happy face
