@@ -9,7 +9,7 @@ on:
 
 jobs:
   happy-face:
-    name: Publish the happy face ${{ steps.deployment.outputs.page_url }}/lemon.txt
+    name: Publish the happy face
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
