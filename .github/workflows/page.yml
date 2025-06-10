@@ -19,7 +19,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: ./strawberry.txt
+          path: strawberry.txt
 
   deploy:
     needs: happy-face
