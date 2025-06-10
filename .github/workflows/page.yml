@@ -18,7 +18,7 @@ jobs:
           path: site/
 
   deploy:
-    need: happy-face
+    needs: happy-face
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
