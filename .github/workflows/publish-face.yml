@@ -15,6 +15,11 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v4
 
+      - name: Create directory which will contain deployed files
+        run: |
+          mkdir site/
+          cp *.txt site/
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
